@@ -11,7 +11,7 @@ function Adddetails() {
           TxnAmount:TxnAmount,
         
       }
-  axios.post('http://localhost:8000/api/details/add',post).then(res=>{
+  axios.post('https://trans-paytab.herokuapp.com/api/details/add',post).then(res=>{
       alert("Post sucessfully added")
   }).catch(err=>{
       console.log(err)

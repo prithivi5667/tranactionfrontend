@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Profile = (props) => {
 const [details,setnewdata]=useState([])
 useEffect(() => {
-  axios.get('http://localhost:8000/api/details').then(res=>{
+  axios.get('https://trans-paytab.herokuapp.com/api/details').then(res=>{
     setnewdata(res.data)
   }).catch(err=>{
     console.log(err)
